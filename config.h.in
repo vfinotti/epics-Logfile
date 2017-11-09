@@ -1,0 +1,21 @@
+/* SPDX-License-Identifier: MIT */
+#cmakedefine HAVE_ARPA_INET_H
+#cmakedefine HAVE_BACKTRACE_SYMBOLS
+#cmakedefine HAVE_CAPTURESTACKBACKTRACE
+#cmakedefine HAVE_GETADDRINFO
+#cmakedefine HAVE_GETEUID
+#cmakedefine HAVE_INET_NTOP
+#cmakedefine HAVE_NETDB_H
+#cmakedefine HAVE_PRCTL
+#cmakedefine HAVE_PWD_H
+#cmakedefine HAVE_SIGACTION
+#cmakedefine HAVE_STRERROR_R
+#cmakedefine HAVE_SYSCONF
+#cmakedefine STRERROR_R_CHAR_P
+#cmakedefine HAVE_SYS_PARAM_H
+#cmakedefine HAVE_SYS_SELECT_H
+#cmakedefine HAVE_SYS_SOCKET_H
+#cmakedefine HAVE_UNISTD_H
+#cmakedefine OPENSSL_FOUND
+#cmakedefine STRUCT_STAT_ST_MTIM_TV_NSEC
+#cmakedefine STRUCT_STAT_ST_MTIME
