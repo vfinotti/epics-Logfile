@@ -27,6 +27,25 @@ Features
   retry. They expire after a given time.
 - Interface to control the logging from within an EPICS IOC.
 
+Installation
+------------
+The installation process uses *cmake* for generating the required files and
+installing them. This is done by running the following commands on the top level
+directory:
+
+```sh
+$ mkdir build
+$ cd build
+$ cmake ../
+$ make
+$ sudo make install
+```
+
+In some cases, it may be required to use the *-std=c++11* flag on
+CMAKE_CXX_FLAGS. This can be done by running ```ccmake ./``` after
+```cmake ../```, pressing "*t*", setting the flag on CMAKE_CXX_FLAGS and
+pressing "*c*" to configure the environment.
+
 Minimum Log Levels
 ------------------
 There are two kinds of minimum log levels:
@@ -70,6 +89,3 @@ When the logging library is initialized, a sink outputting to stdout is
 automatically added in order to make the most common use case easy.
 This default sink can be removed at any time by calling
     SuS::logfile::logger::instance()->remove_output_stream("stdout");
-
-
-
